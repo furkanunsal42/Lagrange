@@ -30,11 +30,14 @@ project "LagrangeCore"
 	}
 
 	includedirs 
-	{
+	{	
+		"%{prj.name}/Source",
+		"%{prj.name}/Dependencies/glm-1.0.1",
 	}
 
 	libdirs
 	{
+		"%{prj.name}/Dependencies/glm-1.0.1",
 	}
 		
 	links
@@ -108,6 +111,8 @@ project "LagrangeVisualizer"
 	includedirs 
 	{
 		"%{prj.name}/Source",
+		"LagrangeCore/Source", 
+		"LagrangeCore/Dependencies/glm-1.0.1",
 	}
 
 	links

@@ -3,3 +3,6 @@
 *.vcxproj
 *.user
 *.sln
+/build-obj
+/build
+*.filters
