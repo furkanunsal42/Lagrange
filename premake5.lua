@@ -23,7 +23,8 @@ project "LagrangeCore"
 	{
 		"%{prj.name}/Source/**.h", 
 		"%{prj.name}/Source/**.cpp",
-		}
+		"%{prj.name}/Dependencies/pempek_assert/**.cpp",
+	}
 
 	removefiles  
 	{
@@ -33,11 +34,13 @@ project "LagrangeCore"
 	{	
 		"%{prj.name}/Source",
 		"%{prj.name}/Dependencies/glm-1.0.1",
+		"LagrangeCore/Dependencies/pempek_assert",
 	}
 
 	libdirs
 	{
 		"%{prj.name}/Dependencies/glm-1.0.1",
+		"%{prj.name}/Dependencies/pempek_assert",
 	}
 		
 	links
@@ -113,6 +116,7 @@ project "LagrangeVisualizer"
 		"%{prj.name}/Source",
 		"LagrangeCore/Source", 
 		"LagrangeCore/Dependencies/glm-1.0.1",
+		"LagrangeCore/Dependencies/pempek_assert",
 	}
 
 	links
