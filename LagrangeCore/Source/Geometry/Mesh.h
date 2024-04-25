@@ -2,7 +2,9 @@
 
 #include "vector"
 
-class Mesh {
+#include "Geometry/GeometryBase.h"
+
+class Mesh : public GeometryBase{
 public:
 
 };

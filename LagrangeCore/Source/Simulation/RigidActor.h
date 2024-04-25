@@ -11,9 +11,9 @@ public:
 	RigidActor() = delete;
 	RigidActor(const RigidActor& other) = delete;
 	
-	RigidActor(std::shared_ptr<Geometry> geometry, Transform transform, Material material);
+	RigidActor(std::shared_ptr<GeometryBase> geometry, Transform transform, Material material);
 
-	std::shared_ptr<Geometry> geometry;
+	std::shared_ptr<GeometryBase> geometry;
 	Transform transform;
 	Material material;
 

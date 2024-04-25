@@ -1,8 +1,9 @@
 #pragma once
 
 #include "Math/Types.h"
+#include "Geometry/GeometryBase.h"
 
-class Sphere {
+class Sphere : public GeometryBase {
 public:
 
 	real radius;
